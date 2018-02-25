@@ -20,7 +20,7 @@ module.exports = function check(str, bracketsConfig) {
         }
         if (bracketsConfig[bc_j][1] === str[str_i]) {
           if (stack[stack.length - 1] === bc_j) {
-            stack.length = stack.length - 1;
+            stack.length = stack.length - 1; //stack.pop();
             break;
           }
           else {
